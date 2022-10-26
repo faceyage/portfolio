@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8aa30642.css",
+    "main.js": "/portfolio/static/js/main.fcb6a846.js",
+    "static/media/memory-card.png": "/portfolio/static/media/memory-card.46318f97a0ad624b0e38.png",
+    "static/media/shopp-app.png": "/portfolio/static/media/shopp-app.7548e73b5109afa4fa2c.png",
+    "index.html": "/portfolio/index.html",
+    "main.8aa30642.css.map": "/portfolio/static/css/main.8aa30642.css.map",
+    "main.fcb6a846.js.map": "/portfolio/static/js/main.fcb6a846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa30642.css",
+    "static/js/main.fcb6a846.js"
+  ]
+}
