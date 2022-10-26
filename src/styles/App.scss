@@ -1,0 +1,63 @@
+@forward "components";
+@use "abstracts" as *;
+
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --text-color2: rgba(255, 255, 255, 0.64);
+  --secondary-color: gray;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem 2rem;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+p {
+  font-size: large;
+}
+
+.icon {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+  accent-color: red;
+  fill: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color2);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+//desktop design
+
+@include desktop {
+  body {
+    padding: 0 10rem;
+  }
+}

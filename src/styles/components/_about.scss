@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+
+  p {
+    font-size: 1.5rem;
+    color: var(--text-color2);
+  }
+}
+
+//desktop design
+
+@include desktop {
+  .about {
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 1.3rem;
+    }
+
+    p {
+      max-width: 60%;
+    }
+  }
+}

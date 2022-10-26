@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+//contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 3rem 0;
+  width: 100%;
+
+  .contactme {
+    height: 100%;
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: x-large;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+@include desktop {
+  .contact {
+    p {
+      font-size: x-large;
+    }
+  }
+}

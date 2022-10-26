@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+//projects section
+.projects-section {
+  h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+//project
+.project {
+  max-width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  .project-info {
+    flex: 1;
+
+    img {
+      max-width: 100%;
+      filter: drop-shadow(0 0 0.75rem rgb(105, 13, 31));
+    }
+
+    .project-details > *,
+    .technologies,
+    img {
+      margin-bottom: 1rem;
+    }
+
+    .summary,
+    .technologies > .title {
+      margin-bottom: 0.5rem;
+    }
+
+    .links a {
+      margin-right: 1rem;
+    }
+  }
+
+  .technologies {
+    .title {
+      font-size: larger;
+    }
+    .techs {
+      color: var(--text-color2);
+    }
+  }
+
+  .date {
+    display: flex;
+    gap: 1rem;
+    font-size: larger;
+    color: var(--text-color2);
+
+    .title {
+      color: var(--text-color);
+    }
+  }
+
+  .summary {
+    font-weight: bold;
+  }
+
+  .desc {
+    color: var(--text-color2);
+  }
+}
+
+//desktop design
+
+@include desktop {
+  .projects-section {
+    h2 {
+      font-weight: bold;
+      font-size: 4rem;
+    }
+  }
+
+  .project {
+    .project-info {
+      display: flex;
+      gap: 2rem;
+
+      img {
+        max-width: 50%;
+      }
+
+      .project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 45%;
+
+        .summary {
+          font-size: 2rem;
+        }
+
+        .desc {
+          font-size: x-large;
+        }
+      }
+    }
+
+    .tech-and-date {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+}

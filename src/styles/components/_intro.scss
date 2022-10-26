@@ -1,0 +1,29 @@
+@use "../abstracts/" as *; //intro
+.intro {
+  text-align: left;
+  font-family: cyrBold, Helvetica, Arial, sans-serif;
+  color: var(--text-color2);
+  margin-bottom: 3rem;
+
+  .name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .profession {
+    font-size: 1.5rem;
+  }
+}
+
+//desktop design
+@include desktop {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 0; //no need since we use 100vh for desktop
+  }
+}
